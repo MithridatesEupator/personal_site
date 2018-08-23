@@ -32,7 +32,7 @@ class NavbarCustom extends React.Component {
   render() {
     return(
       <div>
-      <Navbar color="light" light className="navbar-custom" >
+      <Navbar dark className="navbar-custom" >
           <NavbarBrand href="/" className="brand-custom">
             <i className="fab fa-react react-brand">
             </i>
