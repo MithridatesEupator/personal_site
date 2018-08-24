@@ -32,7 +32,7 @@ class NavbarCustom extends React.Component {
   render() {
     return(
       <div>
-      <Navbar dark className="navbar-custom" >
+      <Navbar light className="navbar-custom" >
           <NavbarBrand href="/" className="brand-custom">
             <i className="fab fa-react react-brand">
             </i>
@@ -42,12 +42,12 @@ class NavbarCustom extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav navbar>
               <NavItem>
-                <NavLink href="/"  className="nav-link">
+                <NavLink href="/"  className="resume nav-link">
                   Resume
                 </NavLink>
               </NavItem>
-              <NavItem className="">
-                <NavLink href="https://github.com/MithridatesEupator" className="nav-link">
+              <NavItem>
+                <NavLink href="https://github.com/MithridatesEupator" className="github nav-link">
                   GitHub
                 </NavLink>
               </NavItem>

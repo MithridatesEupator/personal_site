@@ -1,29 +1,31 @@
 p {
   font-family: Roboto;
-  background-color: blue;
   margin: 0;
-  padding: 0;
+  padding: 1rem;
 }
 
 body {
-  background-image: url(./static/background.png);
-  background-size: 120vh;
-  background-repeat: no-repeat;
   width: 100%;
-  background-color: #171717 !important;
+  background-color: #fff !important;
   background-attachment: fixed;
 }
 
 .navbar-custom {
   position: fixed !important;
-  width: 100%;
-  border-bottom: 1px solid #c1c1c1;
-  background-color: #171717 !important;
+  width: 96%;
+  border-bottom: 2px solid #313131;
+  background-color: transparent !important;
   z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .react-brand {
   margin-right: 1rem;
+  background-color: #111;
+  color: #fff;
+  border-radius: 2px;
+  padding: 1px;
 }
 
 .brand-custom {
@@ -47,10 +49,12 @@ body {
 }
 
 .container-custom {
-  background-color: #f9f9f9;
-  padding: 1rem;
+  background-color: #f3f3f3;
+  padding: 0;
   font-family: Roboto;
   font-size: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 .container-main {
@@ -62,15 +66,63 @@ body {
 
 .container-welcome {
   display: flex;
-  justify-content: center;
   align-self: center;
   background-color: transparent;
   margin: 26vh 15rem;
-  border: 2px solid white;
+  border: 2px solid black;
+  color: black;
   font-family: Corbel;
   font-size: 2rem;
-  color: white;
   padding: 1rem 2rem;
+  animation: loading-bar 2s linear;
+}
+
+.container-custom-small {
+  background-color: #e9ecef;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 4px;
+}
+
+.breadcrumb-custom {
+  margin: 1rem;
+}
+
+.resume::before {
+  padding-right: 12px;
+  content: "\f27e";
+  font-family: FontAwesome;
+}
+
+.github::before {
+  padding-right: 12px;
+  content: "\f092";
+  font-family: FontAwesome;
+}
+
+.nav-link:hover {
+  color: black;
+  transition-duration: .5s;
+}
+
+.profile-pic {
+  background-image: url("./static/profile-pic.png");
+  background-size: 100%;
+  background-color: blue;
+  background-repeat: no-repeat;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50rem;
+  margin: 2rem;
+}
+
+@keyframes loading-bar {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*

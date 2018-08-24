@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarCustom from "./components/NavbarCustom";
-import CarouselCustom from "./components/CarouselCustom";
-import JumbotronCustom from "./components/JumbotronCustom";
-import BreadcrumbCustom from "./components/BreadcrumbCustom.js"
-import { Container } from 'reactstrap';
+import BarCustom from "./components/BarCustom.js";
+import ProfileCustom from "./components/ProfileCustom.js";
+
+let bioPass = "This is the site of Mithridates Eupator. It was built with React.js and node.js."
 
 class App extends Component {
   render() {
@@ -14,13 +14,61 @@ class App extends Component {
         <link crossOrigin rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossOrigin="anonymous"  />
         <NavbarCustom />
         <br />
+        <br />
         <div className="container-main">
-          <div className="container-welcome">
-            FRONTEND DEVELOPER
-          </div>
+          <BarCustom value="WELCOME"/>
           <div className="container-custom">
-            <BreadcrumbCustom />
-            This is the personal site of Mithridates Eupator
+            <ProfileCustom bio={bioPass}/>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
             <br />
             <br />
             <br />
