@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
   Collapse,
   Navbar,
@@ -7,20 +7,15 @@ import {
   Nav,
   NavItem,
   NavLink,
-  Container,
-  Dropdown,
-  DropdownItem,
-  DropdownMenu,
-  DropdownToggle,
 } from 'reactstrap';
 import "font-awesome/css/font-awesome.min.css";
 
-
-let padding = {}
-
 class NavbarCustom extends React.Component {
-  state = {
-    isOpen: false
+  constructor(props) {
+    super(props)
+    this.state = {
+      isOpen: false
+    }
   }
 
   toggle = () => {
@@ -32,16 +27,16 @@ class NavbarCustom extends React.Component {
   render() {
     return(
       <div>
-      <Navbar light className="navbar-custom" >
-          <NavbarBrand href="/" className="brand-custom">
-            <i className="fab fa-react react-brand">
-            </i>
-            Powered by React.js
-          </NavbarBrand>
-          <NavbarToggler onClick={this.toggle} className="mr-2" />
+      <Navbar dark className="navbar-custom" >
+        <NavbarToggler onClick={this.toggle} className="navbar-toggler"/>
+        <NavbarBrand href="https://reactjs.org/" className="brand-custom">
+          <i className="fab fa-react react-brand">
+          </i>
+          Powered by React.js
+        </NavbarBrand>
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav navbar>
-              <NavItem>
+              <NavItem className="nav-item">
                 <NavLink href="/"  className="resume nav-link">
                   Resume
                 </NavLink>
