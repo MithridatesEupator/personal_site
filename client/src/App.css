@@ -2,22 +2,45 @@ p {
   font-family: Raleway;
   margin: 0;
   padding: 1rem;
-  text-align: center;
 }
 
 body {
   width: 100%;
   background-color: #282830 !important;
   background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+App {
+  position: absolute;
 }
 
 .navbar-custom {
   position: static !important;
   width: 96%;
-  border-bottom: 2px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
   margin: 0% 2%;
   background-color: transparent !important;
   z-index: 2;
+}
+
+.navbar-toggler {
+  border-color: transparent !important;
+}
+
+.navbar-toggler:focus {
+  outline: 0;
+}
+
+.modal-body {
+  font-family: Raleway;
+  background-color: d1d1d1 !important;
+  border: none;
+}
+
+.modal-edges {
+  font-family: Raleway;
+  border: none;
 }
 
 .react-brand {
@@ -50,13 +73,14 @@ body {
 
 .container-custom {
   background-color: #d1d1d1;
-  padding: 0;
+  padding: 0 2%;
   font-family: Raleway;
   font-size: 1rem;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  justify-content: center;
+  width: 104%;
+  transform: translateX(-2%);
+  align-items: center;
 }
 
 .container-main {
@@ -64,20 +88,23 @@ body {
   justify-content: center;
   align-self: center;
   flex-direction: column;
+  background-color: #282830;
 }
 
 .container-welcome {
+  background-image: url('./static/front.png');
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 6vh 0;
+  z-index: 4;
   display: flex;
   align-self: center;
   background-color: transparent;
-  margin: 26vh 15rem;
-  border: 2px solid white;
   color: white;
-  font-family: Raleway;
-  font-size: 2rem;
-  padding: 1rem 2rem;
+  width: 20rem;
+  height: 20rem;
   animation: loading-bar 4s linear;
-  border-radius: 6px;
 }
 
 .container-custom-small {
@@ -112,7 +139,6 @@ body {
 .profile-pic {
   background-image: url("./static/profile-pic.png");
   background-size: 100%;
-  background-color: blue;
   background-repeat: no-repeat;
   width: 10rem;
   height: 10rem;
@@ -140,6 +166,11 @@ body {
     opacity: 1;
   }
 }
+
+.modal-custom {
+  font-family: Raleway;
+}
+
 
 /*
 .custom-navbar {
