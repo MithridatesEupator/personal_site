@@ -2,6 +2,7 @@ p {
   font-family: Raleway;
   margin: 0;
   padding: 1rem;
+  text-align: center;
 }
 
 body {
@@ -20,7 +21,7 @@ body {
 }
 
 .react-brand {
-  margin-right: 1rem;
+  margin-right: .5rem;
   background-color: #fff;
   color: #282830;
   border-radius: 2px;
@@ -29,8 +30,7 @@ body {
 
 .brand-custom {
   font-family: Raleway;
-  font-size: 1rem;
-  animation: loading-bar 2s ease-out;
+  animation: loading-bar 2s linear;
 }
 
 .nav-link {
@@ -54,6 +54,7 @@ body {
   font-family: Raleway;
   font-size: 1rem;
   display: flex;
+  flex-direction: column;
   width: 100%;
   justify-content: center;
 }
@@ -75,7 +76,7 @@ body {
   font-family: Raleway;
   font-size: 2rem;
   padding: 1rem 2rem;
-  animation: loading-bar 4s ease-out;
+  animation: loading-bar 4s linear;
   border-radius: 6px;
 }
 

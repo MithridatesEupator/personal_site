@@ -1,16 +1,26 @@
 const express = require('express');
-const mongoose = require('mongoose');
+const mysql = require('mysql');
 const bodyParser = require('body-parser');
 
 const app = express();
 
 app.use(bodyParser.json());
 
-const db = require('./config/keys').mongoURI;
 
-mongoose.connect(db, {useNewUrlParser: true})
-    .then(() => console.log("MONGOOSE CONNECTED SUCCESSFULLY"))
-    .catch(error => console.log(error))
+const connection = mysql.createConnection({
+  host: "localhost",
+  user: "root",
+  password: "",
+  database: "personalSiteDB"
+})
+connection.connect(function(err) {
+  if (err) {
+    console.log({...err});
+  }
+  else {
+    console.log("MYSQL CONNECTION SUCCEEDED!");
+  }
+});
 
 const port = 5000;
-app.listen(port, () => console.log("SERVER STARTED SUCCESSFULLY "));
+app.listen(port, () => console.log("SERVER STARTED SUCCESSFULLY"));

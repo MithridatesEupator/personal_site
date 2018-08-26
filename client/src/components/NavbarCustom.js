@@ -37,7 +37,7 @@ class NavbarCustom extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav navbar>
               <NavItem className="nav-item">
-                <NavLink href="/"  className="resume nav-link">
+                <NavLink href="#resume-container"  className="resume nav-link">
                   Resume
                 </NavLink>
               </NavItem>

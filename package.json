@@ -8,7 +8,7 @@
     "server-normal": "node server.js",
     "server-nodemon": "nodemon server.js",
     "client-react": "npm start --prefix client",
-    "server-client" : "concurrently \"npm run server-nodemon\" \"npm run client-react\" "
+    "server-client": "concurrently \"npm run server-nodemon\" \"npm run client-react\" "
   },
   "author": "mithridates",
   "license": "MIT",
@@ -16,7 +16,7 @@
     "body-parser": "^1.18.3",
     "concurrently": "^3.6.1",
     "express": "^4.16.3",
-    "mongoose": "^5.2.8",
+    "mysql": "^2.16.0",
     "nodemon": "^1.18.3"
   }
 }
