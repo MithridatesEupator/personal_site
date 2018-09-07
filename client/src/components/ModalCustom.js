@@ -26,14 +26,40 @@ class ModalCustom extends React.Component {
     return (
       <div>
         <Button outline color="primary" onClick={this.toggle} className="modal-button">
-          Open
+          {this.props.buttonName}
         </Button>
         <Modal isOpen={this.state.isOpen}>
           <ModalHeader className="modal-edges">
-            Modal Title
+            Experiences
           </ModalHeader>
           <ModalBody className="modal-body">
-            This is a test and it should work.
+          <ul>
+            <li>
+              Javascript
+              <ul>
+                <li>
+                  React.js
+                  </li>
+                  <li>
+                  node.js
+                  </li>
+                </ul>
+            </li>
+            <li>
+              Java
+            </li>
+            <li>
+              C#
+            </li>
+            <li>
+              python
+              <ul>
+                <li>
+                Django
+                </li>
+              </ul>
+            </li>
+          </ul>
           </ModalBody>
           <ModalFooter>
             <Button onClick={this.toggle} className="modal-edges">

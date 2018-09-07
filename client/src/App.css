@@ -1,5 +1,8 @@
-p {
+* {
   font-family: Raleway;
+}
+
+p {
   margin: 0;
   padding: 1rem;
 }
@@ -33,13 +36,11 @@ App {
 }
 
 .modal-body {
-  font-family: Raleway;
   background-color: d1d1d1 !important;
   border: none;
 }
 
 .modal-edges {
-  font-family: Raleway;
   border: none;
 }
 
@@ -52,12 +53,10 @@ App {
 }
 
 .brand-custom {
-  font-family: Raleway;
   animation: loading-bar 2s linear;
 }
 
 .nav-link {
-  font-family: Raleway;
 }
 
 .carousel-custom {
@@ -74,7 +73,6 @@ App {
 .container-custom {
   background-color: #d1d1d1;
   padding: 0 2%;
-  font-family: Raleway;
   font-size: 1rem;
   display: flex;
   flex-direction: column;
@@ -169,6 +167,16 @@ App {
 
 .modal-custom {
   font-family: Raleway;
+}
+
+.hr-custom {
+  background-color: #282830;
+  width: 50%;
+  height: 5px;
+}
+
+h1 {
+  margin: 2% 0;
 }
 
 

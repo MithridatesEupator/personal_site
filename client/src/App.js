@@ -21,10 +21,9 @@ class App extends Component {
             <br />
             <br />
             <br />
-            <ModalCustom />
+            <ModalCustom buttonName="Resume"/>
             <a name="resume-container">
             </a>
-            <p> this should work </p>
             <br />
             <br />
             <br />
