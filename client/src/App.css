@@ -154,12 +154,11 @@ App {
 }
 
 .text-top {
-  font-family: Roboto;
-  font-size: 300%;
+  font-size: 230%;
   color: #f1f1f1;
   padding: 2%;
   text-align: center;
-  margin-top: 2%;
+  margin: 2% 0;
 }
 
 .container-button {
@@ -219,8 +218,7 @@ App {
     display: flex;
     align-items: center;
     flex-direction: column;
-    min-width: 40%;
-    max-width: 80%;
+    width: 20rem;
 }
 
 .profile-pic {

@@ -4,9 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarCustom from "./components/NavbarCustom";
 import BarCustom from "./components/BarCustom.js";
 import ProfileCustom from "./components/ProfileCustom.js";
-import ModalCustom from "./components/ModalCustom.js";
 
-let bioPass = "Hello there, my name is Filip Saulean, or, as I go by on the internet, Mithridates Eupator. My personal site was built with React.js. One of my pluses is that I am a fast learner so that if you need me to learn a new library or language, I will do so in an expedient manner.";
+let bioPass = "Hello there, my name is Filip Saulean, or, as I go by on the internet, Mithridates Eupator. My personal site was built with React.js and node.js. One of my pluses is that I am a fast learner so that if you need me to learn a new library or language, I will do so in an expedient manner.";
 
 class App extends Component {
   render() {
@@ -18,41 +17,22 @@ class App extends Component {
         <div className="container-main">
           <BarCustom welcomeText={"</>"}/>
           <div className="container-custom">
-            <a name="resume-container"></a>
+            <a name="resume-container">
             <ProfileCustom bio={bioPass}/>
             <br />
+            </a>
             <div className="post">
-            <p style={{textAlign: 'center', borderBottom: "4px solid #282830"}}> Technologies I am familiar with: </p>
-            <ul>
-              <li>
-                Javascript
-                <ul>
-                  <li>
-                    React.js
-                    </li>
-                    <li>
-                    node.js
-                    </li>
-                    <li>
-                      Jquery
-                    </li>
-                  </ul>
-              </li>
-              <li>
-                Java
-              </li>
-              <li>
-                C#
-              </li>
-              <li>
-                python
-                <ul>
-                  <li>
-                  Django
-                  </li>
-                </ul>
-              </li>
-            </ul>
+            <p style={{textAlign: 'center', borderBottom: "4px solid #282830"}}>
+              Experiences
+            </p>
+            Javascript <br/>
+            node.js <br/>
+            react.js <br/>
+            express.js <br/>
+            Java <br/>
+            C# <br/>
+            MySql 
+
             </div>
             <div className="post">
               <p style={{textAlign: 'center', borderBottom: "4px solid #282830"}}> Contact Information </p>
