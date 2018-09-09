@@ -14,20 +14,20 @@ class NavbarCustom extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      isOpen: false
+      isOpen: false,
     }
   }
 
   toggle = () => {
     this.setState({
-      isOpen: !this.state.isOpen
+      isOpen: !this.state.isOpen,
     });
   }
 
   render() {
     return(
       <div>
-      <Navbar dark className="navbar-custom" >
+      <Navbar className="navbar-custom">
         <NavbarToggler onClick={this.toggle} className="navbar-toggler"/>
         <NavbarBrand href="https://reactjs.org/" className="brand-custom">
           <i className="fab fa-react react-brand">
@@ -35,7 +35,7 @@ class NavbarCustom extends React.Component {
           Powered by React.js
         </NavbarBrand>
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav navbar>
+            <Nav navbar style={{marginTop: "1%"}}>
               <NavItem className="nav-item">
                 <NavLink href="#resume-container"  className="resume nav-link">
                   Resume
@@ -52,7 +52,6 @@ class NavbarCustom extends React.Component {
       </div>
     );
   }
-
 }
 
 export default NavbarCustom;

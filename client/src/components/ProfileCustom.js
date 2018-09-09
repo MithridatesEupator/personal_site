@@ -2,7 +2,6 @@ import React from 'react';
 
 class ProfileCustom extends React.Component {
 
-
   render() {
     return(
       <div style={{display: 'flex', flexDirection: "column", alignItems: "center"}}>

@@ -30,36 +30,12 @@ class ModalCustom extends React.Component {
         </Button>
         <Modal isOpen={this.state.isOpen}>
           <ModalHeader className="modal-edges">
-            Experiences
+            Contact Information
           </ModalHeader>
           <ModalBody className="modal-body">
-          <ul>
-            <li>
-              Javascript
-              <ul>
-                <li>
-                  React.js
-                  </li>
-                  <li>
-                  node.js
-                  </li>
-                </ul>
-            </li>
-            <li>
-              Java
-            </li>
-            <li>
-              C#
-            </li>
-            <li>
-              python
-              <ul>
-                <li>
-                Django
-                </li>
-              </ul>
-            </li>
-          </ul>
+            fsaulean@gmail.com <br/>
+            fsaulean@uvm.edu <br/>
+            808-315-5313
           </ModalBody>
           <ModalFooter>
             <Button onClick={this.toggle} className="modal-edges">
