@@ -13,36 +13,37 @@ class App extends Component {
       <div className="App">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossOrigin="anonymous"  />
         <NavbarCustom />
-        <br />
         <div className="container-main">
-          <BarCustom welcomeText={"</>"}/>
-          <div className="container-custom">
-            <a name="resume-container">
+            <div className="welcome-box">
+              <h1 className="header-1">
+                Hello, there!
+              </h1>
+            </div>
+            <a name="resume-container" className="anchor-custom">
             <ProfileCustom bio={bioPass}/>
-            <br />
             </a>
-            <div className="post">
-            <p style={{textAlign: 'center', borderBottom: "4px solid #282830"}}>
-              Experiences
-            </p>
-            Javascript <br/>
-            node.js <br/>
-            react.js <br/>
-            express.js <br/>
-            Java <br/>
-            C# <br/>
-            MySql 
-
-            </div>
-            <div className="post">
-              <p style={{textAlign: 'center', borderBottom: "4px solid #282830"}}> Contact Information </p>
-              fsaulean@gmail.com <br/>
-              fsaulean@uvm.edu <br/>
-              808-315-5313
-            </div>
+              <div className="post">
+                <p style={{borderBottom: "4px solid #373131"}}>
+                  Experiences
+                </p>
+                Javascript <br/>
+                node.js <br/>
+                react.js <br/>
+                express.js <br/>
+                Java <br/>
+                C# <br/>
+                MySql
+              </div>
+              <div className="post">
+                <p style={{borderBottom: "4px solid #373131"}}> Contact Information </p>
+                fsaulean@gmail.com <br/>
+                fsaulean@uvm.edu <br/>
+                808-315-5313
+              </div>
           </div>
-        </div>
+          <br />
       </div>
+
     );
   }
 }

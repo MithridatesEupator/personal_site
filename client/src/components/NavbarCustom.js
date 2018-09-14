@@ -35,7 +35,7 @@ class NavbarCustom extends React.Component {
           Powered by React.js
         </NavbarBrand>
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav navbar style={{marginTop: "1%"}}>
+            <Nav navbar className="navbar-custom-container">
               <NavItem className="nav-item">
                 <NavLink href="#resume-container"  className="resume nav-link">
                   Resume
